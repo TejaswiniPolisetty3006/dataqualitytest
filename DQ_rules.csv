@@ -1,0 +1,2 @@
+﻿dq_check_id,Check,Database_name,table_name,primary_key_cols,sql_for_run,priority,threshold
+100,duplicate,corp_us_mart_smart,txn_mrt_meal_intrctn_glbl,meal_intrctn_key,"select meal_intrctn_key,count(*) from corp_us_mart_smart.txn_mrt_meal_intrctn_glbl group by meal_intrctn_key having count(*)>1",p1,100
