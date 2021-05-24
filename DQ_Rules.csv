@@ -1,0 +1,3 @@
+﻿dq_check_id,Check,Database_name,table_name,primary_key_cols,sql_fr_run,priority,threshold
+100,duplicate,corp_us_hub,txn_purchasingitem_erp_glbl,md5_key,"with tmp as (select md5_key, count(1) from corp_us_hub.txn_purchasingitem_erp_glbl group by md5_key having count(1) > 1)
+select count(1) from tmp;",P1,100
