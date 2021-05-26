@@ -3,4 +3,5 @@
 select count(1) from tmp;",P1,100
 101,duplicate,corp_us_mart_smart,txn_mrt_meal_expnse_glbl,md5_key,"with tmp as (select meal_expnse_key, count(1) from corp_us_mart_smart.txn_mrt_meal_expnse_glbl group by meal_expnse_key having count(1) > 1)
 select count(1) from tmp;",P1,100
-
+102,duplicate,corp_us_mart_smart,txn_mrt_meal_expnse_glbl,md5_key,"with tmp as (select meal_expnse_key, count(1) from corp_us_mart_smart.txn_mrt_meal_expnse_glb group by meal_expnse_key having count(1) > 1)
+select count(1) from tmp;",P1,100
